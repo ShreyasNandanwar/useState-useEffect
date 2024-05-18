@@ -21,7 +21,7 @@ const WeatherApp = () => {
   };
 
   const fetchWeatherbyLocation = async (latitude, longitude) => {
-    const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=5dd80c3b220a4ab1a0a73615243004&q=${latitude},${longitude}`);
+    const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=${latitude},${longitude}`);
     if(!response.ok){
       throw new Error('failed to fetch api');
     }
